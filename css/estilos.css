@@ -1,0 +1,207 @@
+/* Cambiar la configuracion de la raiz */
+
+/* por defecto 1rem = 16px */
+/* html{
+    font-size: 62,5%;
+} */
+/* Ahora
+1REM = 10PX */
+/* RESET DEL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* llamar al ID */
+.falso-body{
+
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font: size 30px;
+    text-decoration: none;
+}
+.inventos{
+    color: black;
+    /* background-color: #DEF5FD; */
+}
+
+/*   ESTILOS DE MI BODY  */
+
+.vento{
+    /* background-image: url("../multimedia/icono-valens.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover; */
+    background-color:#FFFFFF ;
+
+    
+}
+    
+
+body{
+    font-family: fantasy;
+}
+.fondo{
+    text-decoration: none;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  
+   
+}
+
+.gol{
+    display: inline;
+    margin: 40px;
+    background-position: center;
+}
+.redes img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 30%;
+
+}
+.wsp img{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(21, 225, 21);
+    padding: 0px;
+    border-radius: 40%;
+
+}
+.wsp{
+    position: fixed;
+    right: 35px;
+    bottom: 40px;
+}
+.padre-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.intro.nosotros{
+    background-color: rgb(78, 30, 110);
+}
+.icono{
+    width: 100px;
+    height: 0;
+
+}
+.texto-index{
+    text-align: center;
+}
+
+/* ESTILOS DE MI HEADER */
+
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+/* ESTILOS DE MI MENU */
+header nav ul{
+    color: black;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/* ESTILOS DEL MAIN */
+.main-index{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 16%);
+    gap: 2rem;
+    margin: 3rem 2rem 3rem 2rem;
+
+}
+
+/* .section-uno{
+    display: none;
+} */
+main section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* ESTILOS DE FOOTER */
+footer{
+    color: white;
+    text-align: center;
+}
+/* ACOMODANDO LOS TEXTOS */
+main section p{
+    text-align: center;
+}
+
+/* MQ DE TABLETS */
+@media screen and (min-width: 600px){
+    .main-index{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 32%);
+    }
+    main .img-cinco{
+        grid-column: span 2;
+    }
+
+}
+
+/* MQ DE DESKTOP */
+@media screen and (min-width: 1024px){
+    .main-index{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50% 25% 25%;
+
+    }
+    .main-index .img-dos, .main-index .img-cuatro{
+        grid-row: span 1;
+    }
+    .main-index .img-cinco{
+        grid-row: span 1.5;
+    }
+}
+
+/* PSEUDO CLASES */
+a:link{
+    color: #1B44A0;
+    /* text-decoration: none; */
+}
+
+a:visited{
+    color: #1B44A0;
+}
+a:hover{
+    border: 3px solid #1B44A0;
+}
+
+/* .texto-index p:first-child{
+    background-color: #054F6B;
+}
+.img-dos, .img-cuatro{
+    background-color: #054F6B;
+} */
+.img-dos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ESTILOS DE MI HTML CONTACTOS */
+.galeria-contacto{
+    margin-top: 100px;
+}
+.formulario-contacto{
+    margin-top: 20px;
+}
