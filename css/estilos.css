@@ -1,207 +1,204 @@
-/* Cambiar la configuracion de la raiz */
-
-/* por defecto 1rem = 16px */
-/* html{
-    font-size: 62,5%;
-} */
-/* Ahora
-1REM = 10PX */
 /* RESET DEL CSS */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
+/* MQ DE TABLETS */
+@media screen and (min-width: 600px) {
+  .main-index {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 32%); }
+  main .img-cinco {
+    grid-column: span 2; } }
 
+/* MQ DE DESKTOP */
+@media screen and (min-width: 1024px) {
+  .main-index {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 25% 25%; }
+    .main-index .img-dos {
+      grid-row: span 1;
+      margin-top: 4rem; }
+    .main-index .img-cuatro {
+      grid-row: span 1;
+      margin-top: 1rem; }
+    .main-index .img-cinco {
+      grid-row: span 1.5; } }
 
-/* llamar al ID */
-.falso-body{
+body {
+  background-color: #FFFFFF; }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center; }
+  header nav ul {
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font: size 30px;
-    text-decoration: none;
-}
-.inventos{
-    color: black;
-    /* background-color: #DEF5FD; */
-}
+    list-style: none;
+    display: flex;
+    gap: 2rem; }
+  header .nav-html {
+    margin: 5%; }
 
-/*   ESTILOS DE MI BODY  */
+.texto-index {
+  text-align: center; }
 
-.vento{
-    /* background-image: url("../multimedia/icono-valens.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover; */
-    background-color:#FFFFFF ;
+main {
+  height: 83vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 16%);
+  gap: 2rem;
+  margin: 4rem 3rem 4rem 3rem; }
+  main p {
+    text-align: center; }
+  main section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
-    
-}
-    
-
-body{
-    font-family: fantasy;
-}
-.fondo{
-    text-decoration: none;
-    text-align: center;
-    position: sticky;
-    top: 0;
-  
-   
-}
-
-.gol{
-    display: inline;
-    margin: 40px;
-    background-position: center;
-}
-.redes img {
+footer {
+  color: white;
+  text-align: center; }
+  footer .redes img {
     width: 40px;
     height: 40px;
     display: inline-block;
     margin-top: 5px;
-    border-radius: 30%;
-
-}
-.wsp img{
-    width: 60px;
-    height: 60px;
-    background-color: rgb(21, 225, 21);
-    padding: 0px;
-    border-radius: 40%;
-
-}
-.wsp{
+    border-radius: 30%; }
+  footer .wsp {
     position: fixed;
     right: 35px;
-    bottom: 40px;
-}
-.padre-flex{
+    bottom: 40px; }
+    footer .wsp img {
+      width: 60px;
+      height: 60px;
+      background-color: #15e115;
+      padding: 0px;
+      border-radius: 40%; }
+
+/* CONTACTOS */
+body {
+  background-color: #FFFFFF; }
+
+/*ESTILOS DE MI HOME DE CONTACTOS*/
+header {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center; }
+  header nav ul {
+    color: black;
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-.intro.nosotros{
-    background-color: rgb(78, 30, 110);
-}
-.icono{
-    width: 100px;
-    height: 0;
+    gap: 2rem; }
+  header .fondo {
+    margin: 5%; }
 
-}
-.texto-index{
-    text-align: center;
-}
+/* ESTILOS DE MI FOOTER */
+footer {
+  color: white;
+  text-align: center;
+  top: 0; }
+  footer .redes img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 30%; }
+  footer .wsp {
+    position: fixed;
+    right: 35px;
+    bottom: 40px; }
+    footer .wsp img {
+      width: 60px;
+      height: 60px;
+      background-color: #15e115;
+      padding: 0px;
+      border-radius: 40%; }
 
-/* ESTILOS DE MI HEADER */
+/* SERVICIOS */
+body {
+  background-color: #FFFFFF;
+  margin: 5px; }
 
-header{
+/*ESTILOS DE MI HOME DE SERVICIOS*/
+header {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center; }
+  header nav ul {
+    color: black;
+    list-style: none;
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
+    gap: 2rem; }
+  header .fondo {
+    margin: 5%; }
 
-/* ESTILOS DE MI MENU */
-header nav ul{
+/* ESTILOS DE MI MAIN */
+.contenedor {
+  height: 75vh;
+  display: grid;
+  grid-template-rows: repeat(3, 60%);
+  grid-template-columns: 1fr 1fr; }
+  .contenedor section {
+    gap: 20px; }
+    .contenedor section h3 {
+      margin: 1vh; }
+    .contenedor section img {
+      width: 200px;
+      height: 200px;
+      margin: 1vh;
+      display: inline-block;
+      border-radius: 30%; }
+
+footer {
+  height: 15vh; }
+
+body {
+  background-color: #FFFFFF; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center; }
+  header .nav-nosotros ul {
     color: black;
     list-style: none;
     display: flex;
     gap: 2rem;
-}
+    margin: 5%; }
 
-/* ESTILOS DEL MAIN */
-.main-index{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 16%);
-    gap: 2rem;
-    margin: 3rem 2rem 3rem 2rem;
+div {
+  height: 100%;
+  width: 25px; }
 
-}
+main {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem; }
+  main section {
+    margin: 5vh; }
 
-/* .section-uno{
-    display: none;
-} */
-main section img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-
-/* ESTILOS DE FOOTER */
-footer{
-    color: white;
-    text-align: center;
-}
-/* ACOMODANDO LOS TEXTOS */
-main section p{
-    text-align: center;
-}
-
-/* MQ DE TABLETS */
-@media screen and (min-width: 600px){
-    .main-index{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 32%);
-    }
-    main .img-cinco{
-        grid-column: span 2;
-    }
-
-}
-
-/* MQ DE DESKTOP */
-@media screen and (min-width: 1024px){
-    .main-index{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50% 25% 25%;
-
-    }
-    .main-index .img-dos, .main-index .img-cuatro{
-        grid-row: span 1;
-    }
-    .main-index .img-cinco{
-        grid-row: span 1.5;
-    }
-}
-
-/* PSEUDO CLASES */
-a:link{
-    color: #1B44A0;
-    /* text-decoration: none; */
-}
-
-a:visited{
-    color: #1B44A0;
-}
-a:hover{
-    border: 3px solid #1B44A0;
-}
-
-/* .texto-index p:first-child{
-    background-color: #054F6B;
-}
-.img-dos, .img-cuatro{
-    background-color: #054F6B;
-} */
-.img-dos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-/* ESTILOS DE MI HTML CONTACTOS */
-.galeria-contacto{
-    margin-top: 100px;
-}
-.formulario-contacto{
-    margin-top: 20px;
-}
+/* ESTILOS DE FOOTER NOSOTROS */
+footer {
+  color: white;
+  text-align: center; }
+  footer .redes img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 30%; }
+  footer .wsp {
+    position: fixed;
+    right: 35px;
+    bottom: 40px; }
+    footer .wsp img {
+      width: 60px;
+      height: 60px;
+      background-color: #15e115;
+      padding: 0px;
+      border-radius: 40%; }

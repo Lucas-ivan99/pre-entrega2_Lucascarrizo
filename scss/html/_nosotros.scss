@@ -1,0 +1,61 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+body{
+    background-color: $color-tres;
+};
+
+//BLOQUE DE MI HEADER
+
+header{
+    @include flex;
+    .nav-nosotros{
+        ul{
+            color: black;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 5%;
+        }
+    }    
+}
+div{
+    height: 100%;
+    width: 25px;
+}
+main{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    section{
+        margin: 5vh;
+    }
+
+}
+
+/* ESTILOS DE FOOTER NOSOTROS */
+footer{
+    color: white;
+    text-align: center;
+    .redes img {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-top: 5px;
+        border-radius: 30%;
+      
+    }
+    .wsp{
+        position: fixed;
+        right: 35px;
+        bottom: 40px;
+        img{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(21, 225, 21);
+            padding: 0px;
+            border-radius: 40%;
+        }
+    }
+}

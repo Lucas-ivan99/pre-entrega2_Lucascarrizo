@@ -1,0 +1,53 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* CONTACTOS */
+
+body{
+    background-color: $color-tres;
+}
+
+/*ESTILOS DE MI HOME DE CONTACTOS*/
+
+header{
+    @include flex;
+    nav{
+        ul{
+            color: black;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    .fondo{
+        margin: 5%;
+    }
+
+}
+
+/* ESTILOS DE MI FOOTER */
+footer{
+    color: white;
+    text-align: center;
+    top: 0;
+    .redes img {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-top: 5px;
+        border-radius: 30%;
+      
+    }
+    .wsp{
+        position: fixed;
+        right: 35px;
+        bottom: 40px;
+        img{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(21, 225, 21);
+            padding: 0px;
+            border-radius: 40%;
+        }
+    }
+}
