@@ -1,0 +1,12 @@
+/* MQ DE TABLETS */
+
+@media screen and (min-width: 600px){
+    .main-index{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 32%);
+    }
+    main .img-cinco{
+        grid-column: span 2;
+    }
+  
+  }

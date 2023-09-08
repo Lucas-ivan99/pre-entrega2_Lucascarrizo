@@ -1,0 +1,51 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* SERVICIOS */
+
+body{
+    background-color: $color-tres;
+    margin: 5px;
+}
+
+/*ESTILOS DE MI HOME DE SERVICIOS*/
+
+header{
+    @include flex;
+    nav{
+        ul{
+            color: black;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    .fondo{
+        margin: 5%;
+    }
+
+}
+
+/* ESTILOS DE MI MAIN */
+.contenedor{
+    height: 75vh;
+    display: grid;
+    grid-template-rows: repeat(3, 60%);
+    grid-template-columns: 1fr 1fr;    
+    section{
+        gap: 20px;
+        h3{
+            margin: 1vh;
+        }
+        img{ 
+            width: 200px;
+            height: 200px;
+            margin: 1vh;
+            display:inline-block;
+            border-radius: 30%;
+        }
+    }
+}
+footer{
+    height: 15vh;
+}
